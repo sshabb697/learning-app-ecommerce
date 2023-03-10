@@ -104,7 +104,7 @@
             <div class="row it_works">
               <?php
 
-                        $link = mysqli_connect('shabbir1226-server.mysql.database.azure.com', 'qtnafsxmre', 'B860TA3QZT14Y35B$', 'shabbir1226-database');
+                        $link = mysqli_connect('shabbir1226-server.mysql.database.azure.com', 'qtnafsxmre', 'B860TA3QZT14Y35B$', 'shabbir1226-database','MYSQLI_CLIENT_SSL');
 
                         if ($link) {
                         $res = mysqli_query($link, "select * from products;");
