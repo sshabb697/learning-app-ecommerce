@@ -103,7 +103,7 @@ git clone https://github.com/kodekloudhub/learning-app-ecommerce.git /var/www/ht
 Update [index.php](https://github.com/kodekloudhub/learning-app-ecommerce/blob/13b6e9ddc867eff30368c7e4f013164a85e2dccb/index.php#L107) file to connect to the right database server. In this case `localhost` since the database is on the same server.
 
 ```
-sudo sed -i 's/172.20.1.101/localhost/g' /var/www/html/index.php
+sudo sed -i 's/172.20.1.101/dbserverip/g' /var/www/html/index.php
 
               <?php
                         $link = mysqli_connect('172.20.1.101', 'ecomuser', 'ecompassword', 'ecomdb');
