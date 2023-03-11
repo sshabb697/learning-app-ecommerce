@@ -37,8 +37,8 @@ sudo firewall-cmd --reload
 ```
 $ mysql
 MariaDB > CREATE DATABASE ecomdb;
-MariaDB > CREATE USER 'ecomuser'@'localhost' IDENTIFIED BY 'ecompassword';
-MariaDB > GRANT ALL PRIVILEGES ON *.* TO 'ecomuser'@'localhost';
+MariaDB > CREATE USER 'ecomuser'@'localhost' IDENTIFIED BY 'ecompassword';   instead of localhost give appserver ip
+MariaDB > GRANT ALL PRIVILEGES ON *.* TO 'ecomuser'@'localhost';     instead of localhost give appserver ip
 MariaDB > FLUSH PRIVILEGES;
 ```
 
